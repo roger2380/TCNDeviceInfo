@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TCNDeviceInfo_Example' do
+  pod 'TCNDeviceInfo', :path => '../'
+
+  target 'TCNDeviceInfo_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

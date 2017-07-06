@@ -1,0 +1,6 @@
+framework module Pods_TCNDeviceInfo_Example {
+  umbrella header "Pods-TCNDeviceInfo_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

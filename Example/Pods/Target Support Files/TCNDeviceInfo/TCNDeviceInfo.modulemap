@@ -1,0 +1,6 @@
+framework module TCNDeviceInfo {
+  umbrella header "TCNDeviceInfo-umbrella.h"
+
+  export *
+  module * { export * }
+}

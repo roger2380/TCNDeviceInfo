@@ -1,0 +1,16 @@
+PODS:
+  - TCNDeviceInfo (0.1.0)
+
+DEPENDENCIES:
+  - TCNDeviceInfo (from `../`)
+
+EXTERNAL SOURCES:
+  TCNDeviceInfo:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TCNDeviceInfo: 9f010d6619bfeffc88901f704945c189792efc74
+
+PODFILE CHECKSUM: 1cf3cc9d57836eb1c5fddca710bee9baa0547bd9
+
+COCOAPODS: 1.2.1
