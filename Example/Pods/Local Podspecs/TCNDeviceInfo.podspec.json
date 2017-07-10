@@ -1,8 +1,8 @@
 {
   "name": "TCNDeviceInfo",
-  "version": "0.0.01",
-  "summary": "get info about Device,system,app.",
-  "description": "get info about Device,system,app.",
+  "version": "0.0.03",
+  "summary": "get info about device,system,app.",
+  "description": "提供和设备、系统、应用相关的信息,例如系统版本,应用版本,应用的包名等信息.",
   "homepage": "http://git.1kxun.com/ios/TCNDeviceInfo",
   "license": {
     "type": "MIT",
@@ -13,20 +13,21 @@
   },
   "source": {
     "git": "ssh://git@git.1kxun.com:9922/ios/TCNDeviceInfo.git",
-    "tag": "0.0.01"
+    "tag": "0.0.03"
   },
   "platforms": {
-    "ios": "7.0"
+    "ios": "8.0"
   },
   "source_files": "TCNDeviceInfo/Classes/**/*",
   "frameworks": [
     "UIKit",
     "CoreTelephony",
-    "AdSupport"
+    "AdSupport",
+    "SystemConfiguration"
   ],
   "dependencies": {
     "TCNDataEncoding": [
-      "= 0.0.1"
+      "~> 0.0.2"
     ]
   }
 }

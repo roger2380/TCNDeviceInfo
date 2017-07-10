@@ -11,6 +11,7 @@
 #endif
 
 #import "TCNBase64.h"
+#import "NSData+TCNGzip.h"
 #import "TCNRSA.h"
 #import "TCNNSString+UrlEncode.h"
 

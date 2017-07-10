@@ -38,5 +38,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'CoreTelephony', 'AdSupport', 'SystemConfiguration'
-  s.dependency 'TCNDataEncoding', '= 0.0.1'
+  s.dependency 'TCNDataEncoding', '~> 0.0.2'
 end

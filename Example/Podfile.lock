@@ -1,9 +1,9 @@
 PODS:
-  - TCNDataEncoding (0.0.1):
-    - TCNDataEncoding/ras-base64 (= 0.0.1)
-  - TCNDataEncoding/ras-base64 (0.0.1)
-  - TCNDeviceInfo (0.0.01):
-    - TCNDataEncoding (= 0.0.1)
+  - TCNDataEncoding (0.0.2):
+    - TCNDataEncoding/ras-base64 (= 0.0.2)
+  - TCNDataEncoding/ras-base64 (0.0.2)
+  - TCNDeviceInfo (0.0.03):
+    - TCNDataEncoding (~> 0.0.2)
 
 DEPENDENCIES:
   - TCNDeviceInfo (from `../`)
@@ -13,8 +13,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TCNDataEncoding: c73a9d9fa34d828da017eb78bde25a6aad4a0e4e
-  TCNDeviceInfo: b5ece82c34e137f135bd27cebc1cb4ff44f61494
+  TCNDataEncoding: 54569c285df52ccd07907ed4c7039e581c9dad61
+  TCNDeviceInfo: fba0edb92d675009bdb845624782b65e110521de
 
 PODFILE CHECKSUM: cce3f97f87f82d425e46f7ed8c472aa12e2e8815
 

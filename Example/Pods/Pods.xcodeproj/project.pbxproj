@@ -7,30 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CCC866E049F8614FF9FCC4CE8DDFF11 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54AD8424C0B5AE744B625E6DE293139 /* CoreTelephony.framework */; };
 		0E975C1087CBFA17BF88D4898C0E5C80 /* Pods-TCNDeviceInfo_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630C96E1616DF4BDC1BF940CAFED63C /* Pods-TCNDeviceInfo_Tests-dummy.m */; };
-		1618EC8DE95070B0197D68FF25E5B15B /* TCNRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CC3041BF114FBB96861F802E4A09E /* TCNRSA.m */; };
-		25FF0E275F3F20194BF86F9A37092B9C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC5457BFB8F88C75AB0C6223C249DDE /* AdSupport.framework */; };
-		28E9CACD0598B561476132DA980E3D13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41A01C6AEDACB724051A874F2911A2E /* UIKit.framework */; };
-		2FEF82C020AE8382B116CAF522C0CD45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF849793B5C1ED505D35DB20AB9E8BF2 /* Foundation.framework */; };
-		34D3D773732DA4C04FE94CA63097A919 /* TCNNSString+UrlEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D55C4AF30BC81DCC0176720770FBBB7 /* TCNNSString+UrlEncode.m */; };
-		60559F255BAE74BBB94EBF116171734B /* TCNDataEncoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2F3EEC5BCAC9ED4D6F9B2192A7061A /* TCNDataEncoding.framework */; };
-		62ACE861A5CDE8B60B7D6A411C61DFEB /* TCNNSString+UrlEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4189B1C57A3A263344BF403C3ED4FBD4 /* TCNNSString+UrlEncode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CA1997079F00D101ADC841626D22A61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF849793B5C1ED505D35DB20AB9E8BF2 /* Foundation.framework */; };
+		2E413172C538B61E81943FF173B159BD /* TCNBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CD8D8CD89CD5AE071CEE9568B24287E /* TCNBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FEF82C020AE8382B116CAF522C0CD45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0EBCA6AF1D5911AD3AB71479756EA0 /* Foundation.framework */; };
+		42B5BB350E7E6C6EB91D46C64206726A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453843688C1C93C49AE6B3AB91B3FCA0 /* CoreTelephony.framework */; };
+		432EF7B9E5BA7390D984B367D4B9EBC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0EBCA6AF1D5911AD3AB71479756EA0 /* Foundation.framework */; };
+		6CA1997079F00D101ADC841626D22A61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0EBCA6AF1D5911AD3AB71479756EA0 /* Foundation.framework */; };
+		758E2C2D5F509CA7AF14B92B16F7237C /* TCNNSString+UrlEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59E321C8046C74653BB28276484DF4 /* TCNNSString+UrlEncode.m */; };
+		7F8AEB883EC0EC99558000115296C239 /* TCNDataEncoding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC231E1211A9C2EFC8A05939BE8C68E5 /* TCNDataEncoding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8156BBC82402EEB8F4CF519C85922FB2 /* TCNDeviceInfo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D594CE73A33ACDCDAF465E22435E9134 /* TCNDeviceInfo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89C1FCF2CA8B6DB4ADC9F05AA0453DC7 /* TCNDeviceInfo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2A2D135A5D02347F46BE4B14BDB7A0 /* TCNDeviceInfo-dummy.m */; };
-		8BDB6365AF6FAD1EBE1E5B6AEA89656F /* TCNBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B287FF6B0880C062A1EF5A14C81CE8A /* TCNBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9106BCAB9C954093D6359647E9EBC540 /* TCNDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4486C121CBD2F65DE209F266EE094B /* TCNDeviceInfo.m */; };
-		9C02DE4A9638B28E6F9A211C42B4F045 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF849793B5C1ED505D35DB20AB9E8BF2 /* Foundation.framework */; };
-		B0C9E1635BD0CB89A9EA214A886336AC /* TCNDataEncoding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A00BC94A19ABCD8610A4128C184DC402 /* TCNDataEncoding-dummy.m */; };
-		BC694EB8DA5EB01D73C967C4D48B5994 /* TCNDataEncoding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A6F3895C8E67DE37B7A022075B21C67 /* TCNDataEncoding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9251644267FC641C8E928CFDFC1E3B75 /* TCNDataEncoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACD488904119AFA926A99EB530563A3 /* TCNDataEncoding.framework */; };
+		92D1EF3F4B997F5E50FE7AE67832F162 /* NSData+TCNGzip.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8B5422DACCF1D07C667F800F72A6D /* NSData+TCNGzip.m */; };
+		99024D92DF936CB0B9A3E515FE46E93B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A387BA38399DDC8A4D72E77C95C62E61 /* UIKit.framework */; };
+		AEB8F13FD30B5C464A4A92441B1204CC /* TCNRSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A887A5E1ED0878304C613BFDCA01A95 /* TCNRSA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4428E1C8E0F591FEC80AEDC0DC67557 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686E6DCDC0C286E700EE7B81E3D9C4DC /* AdSupport.framework */; };
+		C0456CD5D5E8563B6F9D758E041BD407 /* TCNRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = EC71902FA4FBD96E71FB877C391FE90D /* TCNRSA.m */; };
 		C43BFF5ADC79B33DD455F4634959C3AE /* Pods-TCNDeviceInfo_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC0C72CC4CF32AB1C251AC054402BF0D /* Pods-TCNDeviceInfo_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D797FA16687F18B9D8B90DBA74EB31E4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5FDA36E4BD6931583D4CE9FB440E30 /* SystemConfiguration.framework */; };
 		D985879724619559C01EC73181EE00BE /* Pods-TCNDeviceInfo_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F1AA7954032CC164738F770840EE8E /* Pods-TCNDeviceInfo_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2DC5CE4E8915A6DDA711156521E0CEE /* TCNDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = C412173FDA736A72FD789280B949D4CE /* TCNDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E53DD839DDA5872EB9FE0271AB960A47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF849793B5C1ED505D35DB20AB9E8BF2 /* Foundation.framework */; };
-		EDEF56824A8189654DAF661218912C31 /* TCNRSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 71C21FEC53828B999D3D64048A955885 /* TCNRSA.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0659EEA1C0D439C66411086289F6A7D /* TCNBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9894E65ECD3E90C5B48B9328541B5488 /* TCNBase64.m */; };
+		E3F70950A772BD151DD86396B8A6F505 /* NSData+TCNGzip.h in Headers */ = {isa = PBXBuildFile; fileRef = FADA8CA119E4533AE0A089533E41F259 /* NSData+TCNGzip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E53DD839DDA5872EB9FE0271AB960A47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0EBCA6AF1D5911AD3AB71479756EA0 /* Foundation.framework */; };
+		E6AB4B3BC1F4AAD2EA5EB5B452C9AA1A /* TCNDataEncoding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0349FB8725B6EA766003D467D569BD /* TCNDataEncoding-dummy.m */; };
 		F232CB2DDBB677AEABA879B0209F42B9 /* Pods-TCNDeviceInfo_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C44BC8B065A97C6DE4485010826020D3 /* Pods-TCNDeviceInfo_Example-dummy.m */; };
+		F41917B078994F1BEE36E4448122E57B /* TCNNSString+UrlEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = C94ABA961A3AEE4E8BC7A847F01553E2 /* TCNNSString+UrlEncode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F968F9A4887644DE651173BEA0466377 /* TCNBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEC155E4FFB544AEDFF29C49300F6 /* TCNBase64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,45 +72,48 @@
 		226C367EDDD1EEA041263307A254B9FE /* Pods-TCNDeviceInfo_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TCNDeviceInfo_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2A7EBCA83A7B08F3D6E5639180841DC6 /* TCNDeviceInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TCNDeviceInfo.framework; path = TCNDeviceInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AAE1BD80BD96BB207A1DE055BC1319A /* Pods-TCNDeviceInfo_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TCNDeviceInfo_Example.modulemap"; sourceTree = "<group>"; };
-		2B287FF6B0880C062A1EF5A14C81CE8A /* TCNBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TCNBase64.h; path = TCNDataEncoding/Base64/TCNBase64.h; sourceTree = "<group>"; };
 		2B7E1A8627BE2EADE357B676DF6F03B0 /* TCNDeviceInfo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TCNDeviceInfo.xcconfig; sourceTree = "<group>"; };
 		2E38EECE30B6D7D346BE0AB9CAE5959F /* Pods-TCNDeviceInfo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCNDeviceInfo_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		348E5F8584B5B6B9ED1ACE8AD9BF9988 /* TCNDataEncoding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCNDataEncoding-prefix.pch"; sourceTree = "<group>"; };
 		34A3C9690009EB34D581BA128625BA48 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36F05558F3D5175E41DF93F0F4DF0F8A /* Pods_TCNDeviceInfo_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TCNDeviceInfo_Tests.framework; path = "Pods-TCNDeviceInfo_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A3F9F08C6C4B25A941F648D2997039A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D55C4AF30BC81DCC0176720770FBBB7 /* TCNNSString+UrlEncode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TCNNSString+UrlEncode.m"; path = "TCNDataEncoding/UrlEncode/TCNNSString+UrlEncode.m"; sourceTree = "<group>"; };
-		4189B1C57A3A263344BF403C3ED4FBD4 /* TCNNSString+UrlEncode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TCNNSString+UrlEncode.h"; path = "TCNDataEncoding/UrlEncode/TCNNSString+UrlEncode.h"; sourceTree = "<group>"; };
+		42CFEC155E4FFB544AEDFF29C49300F6 /* TCNBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TCNBase64.m; path = TCNDataEncoding/Base64/TCNBase64.m; sourceTree = "<group>"; };
+		453843688C1C93C49AE6B3AB91B3FCA0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 		467024743D96D6F6CC48AFC82E1EB1ED /* Pods-TCNDeviceInfo_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TCNDeviceInfo_Example-frameworks.sh"; sourceTree = "<group>"; };
 		54BFFE07A1FA08863A4091EC6FD96C04 /* TCNDeviceInfo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TCNDeviceInfo.modulemap; sourceTree = "<group>"; };
 		5D674DB888033AE62F2BEE09F8E1AC86 /* Pods-TCNDeviceInfo_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCNDeviceInfo_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5F2F3EEC5BCAC9ED4D6F9B2192A7061A /* TCNDataEncoding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TCNDataEncoding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F6CC3041BF114FBB96861F802E4A09E /* TCNRSA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TCNRSA.m; path = TCNDataEncoding/RSA/TCNRSA.m; sourceTree = "<group>"; };
-		6320D8358B0E7471582EEDB822BB9E27 /* TCNDataEncoding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TCNDataEncoding.modulemap; sourceTree = "<group>"; };
-		71C21FEC53828B999D3D64048A955885 /* TCNRSA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TCNRSA.h; path = TCNDataEncoding/RSA/TCNRSA.h; sourceTree = "<group>"; };
-		7A6F3895C8E67DE37B7A022075B21C67 /* TCNDataEncoding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCNDataEncoding-umbrella.h"; sourceTree = "<group>"; };
+		686E6DCDC0C286E700EE7B81E3D9C4DC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
+		6ACD488904119AFA926A99EB530563A3 /* TCNDataEncoding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TCNDataEncoding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0EBCA6AF1D5911AD3AB71479756EA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6F0349FB8725B6EA766003D467D569BD /* TCNDataEncoding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TCNDataEncoding-dummy.m"; sourceTree = "<group>"; };
 		80E32F0341DA00D32DC1BB94B5FC742E /* Pods-TCNDeviceInfo_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCNDeviceInfo_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		84F1AA7954032CC164738F770840EE8E /* Pods-TCNDeviceInfo_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TCNDeviceInfo_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8630C96E1616DF4BDC1BF940CAFED63C /* Pods-TCNDeviceInfo_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TCNDeviceInfo_Tests-dummy.m"; sourceTree = "<group>"; };
 		8A678C66B64DBF96CB7111F8F4572BD9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A887A5E1ED0878304C613BFDCA01A95 /* TCNRSA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TCNRSA.h; path = TCNDataEncoding/RSA/TCNRSA.h; sourceTree = "<group>"; };
+		8CD8D8CD89CD5AE071CEE9568B24287E /* TCNBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TCNBase64.h; path = TCNDataEncoding/Base64/TCNBase64.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9894E65ECD3E90C5B48B9328541B5488 /* TCNBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TCNBase64.m; path = TCNDataEncoding/Base64/TCNBase64.m; sourceTree = "<group>"; };
+		9C5FDA36E4BD6931583D4CE9FB440E30 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		9EA518228BCCD2FA849CE5FCFCC2FA17 /* Pods-TCNDeviceInfo_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TCNDeviceInfo_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		A00BC94A19ABCD8610A4128C184DC402 /* TCNDataEncoding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TCNDataEncoding-dummy.m"; sourceTree = "<group>"; };
-		A54AD8424C0B5AE744B625E6DE293139 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		A3145AEF6471DAC1230E6FB083A3A3B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A387BA38399DDC8A4D72E77C95C62E61 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		AAD8B5422DACCF1D07C667F800F72A6D /* NSData+TCNGzip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+TCNGzip.m"; path = "TCNDataEncoding/Gzip/NSData+TCNGzip.m"; sourceTree = "<group>"; };
 		AC2A2D135A5D02347F46BE4B14BDB7A0 /* TCNDeviceInfo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TCNDeviceInfo-dummy.m"; sourceTree = "<group>"; };
+		AFD03EC980C0304FC08882841E8EEDD2 /* TCNDataEncoding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCNDataEncoding-prefix.pch"; sourceTree = "<group>"; };
+		BA59E321C8046C74653BB28276484DF4 /* TCNNSString+UrlEncode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TCNNSString+UrlEncode.m"; path = "TCNDataEncoding/UrlEncode/TCNNSString+UrlEncode.m"; sourceTree = "<group>"; };
+		BC231E1211A9C2EFC8A05939BE8C68E5 /* TCNDataEncoding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCNDataEncoding-umbrella.h"; sourceTree = "<group>"; };
 		C29BF798B7F726EEC92B721E2C6868F2 /* TCNDeviceInfo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCNDeviceInfo-prefix.pch"; sourceTree = "<group>"; };
 		C412173FDA736A72FD789280B949D4CE /* TCNDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TCNDeviceInfo.h; sourceTree = "<group>"; };
 		C44BC8B065A97C6DE4485010826020D3 /* Pods-TCNDeviceInfo_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TCNDeviceInfo_Example-dummy.m"; sourceTree = "<group>"; };
-		C7C531B61735DF90D59C2D280CA79C52 /* TCNDataEncoding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TCNDataEncoding.xcconfig; sourceTree = "<group>"; };
-		CEC5457BFB8F88C75AB0C6223C249DDE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
+		C94ABA961A3AEE4E8BC7A847F01553E2 /* TCNNSString+UrlEncode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TCNNSString+UrlEncode.h"; path = "TCNDataEncoding/UrlEncode/TCNNSString+UrlEncode.h"; sourceTree = "<group>"; };
+		D2F95E33853AC0876EE8B9B6030DCA90 /* TCNDataEncoding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TCNDataEncoding.modulemap; sourceTree = "<group>"; };
 		D594CE73A33ACDCDAF465E22435E9134 /* TCNDeviceInfo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCNDeviceInfo-umbrella.h"; sourceTree = "<group>"; };
 		DEE00AEEF9588C49708A8DCCBD560CE7 /* Pods-TCNDeviceInfo_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TCNDeviceInfo_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E0BDB6FA1AE4C7687D9532E2B2C7B514 /* TCNDataEncoding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TCNDataEncoding.xcconfig; sourceTree = "<group>"; };
 		E35423C0D3EA7D0DA486921ED3413FAA /* TCNDataEncoding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TCNDataEncoding.framework; path = TCNDataEncoding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1D9B95EF93FFADBAB3593C7940BA63 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F41A01C6AEDACB724051A874F2911A2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EC71902FA4FBD96E71FB877C391FE90D /* TCNRSA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TCNRSA.m; path = TCNDataEncoding/RSA/TCNRSA.m; sourceTree = "<group>"; };
+		FADA8CA119E4533AE0A089533E41F259 /* NSData+TCNGzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+TCNGzip.h"; path = "TCNDataEncoding/Gzip/NSData+TCNGzip.h"; sourceTree = "<group>"; };
 		FC0C72CC4CF32AB1C251AC054402BF0D /* Pods-TCNDeviceInfo_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TCNDeviceInfo_Example-umbrella.h"; sourceTree = "<group>"; };
-		FF849793B5C1ED505D35DB20AB9E8BF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,23 +125,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5136EFFA7C2837919C44C904BFE2C883 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4428E1C8E0F591FEC80AEDC0DC67557 /* AdSupport.framework in Frameworks */,
+				42B5BB350E7E6C6EB91D46C64206726A /* CoreTelephony.framework in Frameworks */,
+				432EF7B9E5BA7390D984B367D4B9EBC3 /* Foundation.framework in Frameworks */,
+				D797FA16687F18B9D8B90DBA74EB31E4 /* SystemConfiguration.framework in Frameworks */,
+				9251644267FC641C8E928CFDFC1E3B75 /* TCNDataEncoding.framework in Frameworks */,
+				99024D92DF936CB0B9A3E515FE46E93B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9510B8062CE11D8D96ABFE6AAAD9F6A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E53DD839DDA5872EB9FE0271AB960A47 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9ECF119D0729AD15973A0D1B5E0B6CF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				25FF0E275F3F20194BF86F9A37092B9C /* AdSupport.framework in Frameworks */,
-				0CCC866E049F8614FF9FCC4CE8DDFF11 /* CoreTelephony.framework in Frameworks */,
-				9C02DE4A9638B28E6F9A211C42B4F045 /* Foundation.framework in Frameworks */,
-				60559F255BAE74BBB94EBF116171734B /* TCNDataEncoding.framework in Frameworks */,
-				28E9CACD0598B561476132DA980E3D13 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +157,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		139FA14FCA1F062935868014CDC5946E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				686E6DCDC0C286E700EE7B81E3D9C4DC /* AdSupport.framework */,
+				453843688C1C93C49AE6B3AB91B3FCA0 /* CoreTelephony.framework */,
+				6E0EBCA6AF1D5911AD3AB71479756EA0 /* Foundation.framework */,
+				9C5FDA36E4BD6931583D4CE9FB440E30 /* SystemConfiguration.framework */,
+				A387BA38399DDC8A4D72E77C95C62E61 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		21239E1C3141ED9A6EFC767627664676 /* Pods-TCNDeviceInfo_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,18 +187,13 @@
 			path = "Target Support Files/Pods-TCNDeviceInfo_Tests";
 			sourceTree = "<group>";
 		};
-		27DBB4BC80114AAE1C64728808D37B37 /* Support Files */ = {
+		28CCD55841248BD7B92E0C0588F9A0B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3A3F9F08C6C4B25A941F648D2997039A /* Info.plist */,
-				6320D8358B0E7471582EEDB822BB9E27 /* TCNDataEncoding.modulemap */,
-				C7C531B61735DF90D59C2D280CA79C52 /* TCNDataEncoding.xcconfig */,
-				A00BC94A19ABCD8610A4128C184DC402 /* TCNDataEncoding-dummy.m */,
-				348E5F8584B5B6B9ED1ACE8AD9BF9988 /* TCNDataEncoding-prefix.pch */,
-				7A6F3895C8E67DE37B7A022075B21C67 /* TCNDataEncoding-umbrella.h */,
+				6ACD488904119AFA926A99EB530563A3 /* TCNDataEncoding.framework */,
+				139FA14FCA1F062935868014CDC5946E /* iOS */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/TCNDataEncoding";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		2E6CCE98327C6EA70C6AF2E2A1BCF1C8 /* Development Pods */ = {
@@ -210,26 +224,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		55214C472B2491741741FF6EB0547875 /* ras-base64 */ = {
+		620CE39B950C2935DEB2467AD72003E2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2B287FF6B0880C062A1EF5A14C81CE8A /* TCNBase64.h */,
-				9894E65ECD3E90C5B48B9328541B5488 /* TCNBase64.m */,
-				4189B1C57A3A263344BF403C3ED4FBD4 /* TCNNSString+UrlEncode.h */,
-				3D55C4AF30BC81DCC0176720770FBBB7 /* TCNNSString+UrlEncode.m */,
-				71C21FEC53828B999D3D64048A955885 /* TCNRSA.h */,
-				5F6CC3041BF114FBB96861F802E4A09E /* TCNRSA.m */,
+				A3145AEF6471DAC1230E6FB083A3A3B3 /* Info.plist */,
+				D2F95E33853AC0876EE8B9B6030DCA90 /* TCNDataEncoding.modulemap */,
+				E0BDB6FA1AE4C7687D9532E2B2C7B514 /* TCNDataEncoding.xcconfig */,
+				6F0349FB8725B6EA766003D467D569BD /* TCNDataEncoding-dummy.m */,
+				AFD03EC980C0304FC08882841E8EEDD2 /* TCNDataEncoding-prefix.pch */,
+				BC231E1211A9C2EFC8A05939BE8C68E5 /* TCNDataEncoding-umbrella.h */,
 			);
-			name = "ras-base64";
-			sourceTree = "<group>";
-		};
-		5CD37564F0FD5FB5CC37C3C1587BB7CE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5F2F3EEC5BCAC9ED4D6F9B2192A7061A /* TCNDataEncoding.framework */,
-				79A5C7EF60D3E202B9DDA4401D8FDFCD /* iOS */,
-			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/TCNDataEncoding";
 			sourceTree = "<group>";
 		};
 		739DF41604A196D318868C34F1D02C89 /* Support Files */ = {
@@ -244,27 +250,6 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/TCNDeviceInfo";
-			sourceTree = "<group>";
-		};
-		762F520467E603001342DC0747BBDF9B /* TCNDataEncoding */ = {
-			isa = PBXGroup;
-			children = (
-				55214C472B2491741741FF6EB0547875 /* ras-base64 */,
-				27DBB4BC80114AAE1C64728808D37B37 /* Support Files */,
-			);
-			name = TCNDataEncoding;
-			path = TCNDataEncoding;
-			sourceTree = "<group>";
-		};
-		79A5C7EF60D3E202B9DDA4401D8FDFCD /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CEC5457BFB8F88C75AB0C6223C249DDE /* AdSupport.framework */,
-				A54AD8424C0B5AE744B625E6DE293139 /* CoreTelephony.framework */,
-				FF849793B5C1ED505D35DB20AB9E8BF2 /* Foundation.framework */,
-				F41A01C6AEDACB724051A874F2911A2E /* UIKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		7A34F4ECCD2B4B5110BA6DD7FD159E06 /* Pods-TCNDeviceInfo_Example */ = {
@@ -290,7 +275,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				2E6CCE98327C6EA70C6AF2E2A1BCF1C8 /* Development Pods */,
-				5CD37564F0FD5FB5CC37C3C1587BB7CE /* Frameworks */,
+				28CCD55841248BD7B92E0C0588F9A0B0 /* Frameworks */,
 				7E62C8688817A21C1BA59FE936714931 /* Pods */,
 				46CBD3DB683671630099B69687D93CA1 /* Products */,
 				3C320867AF0790B3FE4A4E03115EDFA5 /* Targets Support Files */,
@@ -300,9 +285,34 @@
 		7E62C8688817A21C1BA59FE936714931 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				762F520467E603001342DC0747BBDF9B /* TCNDataEncoding */,
+				A4DCE03970F55DC39AD709A3EF8EF387 /* TCNDataEncoding */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		823D9D8B13190C23C0F1AC3216763ECB /* ras-base64 */ = {
+			isa = PBXGroup;
+			children = (
+				FADA8CA119E4533AE0A089533E41F259 /* NSData+TCNGzip.h */,
+				AAD8B5422DACCF1D07C667F800F72A6D /* NSData+TCNGzip.m */,
+				8CD8D8CD89CD5AE071CEE9568B24287E /* TCNBase64.h */,
+				42CFEC155E4FFB544AEDFF29C49300F6 /* TCNBase64.m */,
+				C94ABA961A3AEE4E8BC7A847F01553E2 /* TCNNSString+UrlEncode.h */,
+				BA59E321C8046C74653BB28276484DF4 /* TCNNSString+UrlEncode.m */,
+				8A887A5E1ED0878304C613BFDCA01A95 /* TCNRSA.h */,
+				EC71902FA4FBD96E71FB877C391FE90D /* TCNRSA.m */,
+			);
+			name = "ras-base64";
+			sourceTree = "<group>";
+		};
+		A4DCE03970F55DC39AD709A3EF8EF387 /* TCNDataEncoding */ = {
+			isa = PBXGroup;
+			children = (
+				823D9D8B13190C23C0F1AC3216763ECB /* ras-base64 */,
+				620CE39B950C2935DEB2467AD72003E2 /* Support Files */,
+			);
+			name = TCNDataEncoding;
+			path = TCNDataEncoding;
 			sourceTree = "<group>";
 		};
 		DFF687DA629B7237AFE733D4404BC143 /* TCNDeviceInfo */ = {
@@ -354,22 +364,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		329787C42DAF99D2D994C6717E653CAC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8BDB6365AF6FAD1EBE1E5B6AEA89656F /* TCNBase64.h in Headers */,
-				BC694EB8DA5EB01D73C967C4D48B5994 /* TCNDataEncoding-umbrella.h in Headers */,
-				62ACE861A5CDE8B60B7D6A411C61DFEB /* TCNNSString+UrlEncode.h in Headers */,
-				EDEF56824A8189654DAF661218912C31 /* TCNRSA.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		430CA17304A6E737CEB7B1087EBD960D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C43BFF5ADC79B33DD455F4634959C3AE /* Pods-TCNDeviceInfo_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93FF1B61C48F5CD61B51E6ACCCA74520 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3F70950A772BD151DD86396B8A6F505 /* NSData+TCNGzip.h in Headers */,
+				2E413172C538B61E81943FF173B159BD /* TCNBase64.h in Headers */,
+				7F8AEB883EC0EC99558000115296C239 /* TCNDataEncoding-umbrella.h in Headers */,
+				F41917B078994F1BEE36E4448122E57B /* TCNNSString+UrlEncode.h in Headers */,
+				AEB8F13FD30B5C464A4A92441B1204CC /* TCNRSA.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +392,7 @@
 			buildConfigurationList = A4A3F6EC26DA0B221E3C2B6D9A5496BB /* Build configuration list for PBXNativeTarget "TCNDeviceInfo" */;
 			buildPhases = (
 				F9675583444B15D00A619A79E619EB72 /* Sources */,
-				C9ECF119D0729AD15973A0D1B5E0B6CF /* Frameworks */,
+				5136EFFA7C2837919C44C904BFE2C883 /* Frameworks */,
 				0B6F455330BD06FEB913E8EF6F83A25F /* Headers */,
 			);
 			buildRules = (
@@ -398,9 +409,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD99FECB1B53FD95505B5C82124B418B /* Build configuration list for PBXNativeTarget "TCNDataEncoding" */;
 			buildPhases = (
-				F7B76AF8915B429B9B9856DDC2C786AE /* Sources */,
+				A21CC1F3523E02EA8B1AA2A297CA6454 /* Sources */,
 				223341E3389F935EC6E584FCEEAF7D41 /* Frameworks */,
-				329787C42DAF99D2D994C6717E653CAC /* Headers */,
+				93FF1B61C48F5CD61B51E6ACCCA74520 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -493,14 +504,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7B76AF8915B429B9B9856DDC2C786AE /* Sources */ = {
+		A21CC1F3523E02EA8B1AA2A297CA6454 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0659EEA1C0D439C66411086289F6A7D /* TCNBase64.m in Sources */,
-				B0C9E1635BD0CB89A9EA214A886336AC /* TCNDataEncoding-dummy.m in Sources */,
-				34D3D773732DA4C04FE94CA63097A919 /* TCNNSString+UrlEncode.m in Sources */,
-				1618EC8DE95070B0197D68FF25E5B15B /* TCNRSA.m in Sources */,
+				92D1EF3F4B997F5E50FE7AE67832F162 /* NSData+TCNGzip.m in Sources */,
+				F968F9A4887644DE651173BEA0466377 /* TCNBase64.m in Sources */,
+				E6AB4B3BC1F4AAD2EA5EB5B452C9AA1A /* TCNDataEncoding-dummy.m in Sources */,
+				758E2C2D5F509CA7AF14B92B16F7237C /* TCNNSString+UrlEncode.m in Sources */,
+				C0456CD5D5E8563B6F9D758E041BD407 /* TCNRSA.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,7 +735,7 @@
 		};
 		A8CB24C3C2651881222EC814EB61AC9F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7C531B61735DF90D59C2D280CA79C52 /* TCNDataEncoding.xcconfig */;
+			baseConfigurationReference = E0BDB6FA1AE4C7687D9532E2B2C7B514 /* TCNDataEncoding.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -787,7 +799,7 @@
 		};
 		B87FE44E6576CEB61D4B672C79F609DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7C531B61735DF90D59C2D280CA79C52 /* TCNDataEncoding.xcconfig */;
+			baseConfigurationReference = E0BDB6FA1AE4C7687D9532E2B2C7B514 /* TCNDataEncoding.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
