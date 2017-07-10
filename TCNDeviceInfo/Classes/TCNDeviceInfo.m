@@ -181,7 +181,7 @@ static NSString * const kTCDeviceInfoUdidPastboardKey = @"TCCLICK_UDID_PASTBOARD
     CTTelephonyNetworkInfo *info = [[CTTelephonyNetworkInfo alloc] init];
     carrier = [info.subscriberCellularProvider carrierName];
   }
-  return carrier;
+  return carrier ? carrier : @"";
 }
 
 + (NSString *)deviceResolution {
