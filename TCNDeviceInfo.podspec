@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TCNDeviceInfo'
-  s.version          = '0.0.02'
+  s.version          = '0.0.03'
   s.summary          = 'get info about device,system,app.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'ssh://git@git.1kxun.com:9922/ios/TCNDeviceInfo.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '8.0'
 
   s.source_files = 'TCNDeviceInfo/Classes/**/*'
   
