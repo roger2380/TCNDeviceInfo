@@ -1,9 +1,9 @@
 {
   "name": "TCNDeviceInfo",
-  "version": "0.1.0",
-  "summary": "A short description of TCNDeviceInfo.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/周高举/TCNDeviceInfo",
+  "version": "0.0.01",
+  "summary": "get info about Device,system,app.",
+  "description": "get info about Device,system,app.",
+  "homepage": "http://git.1kxun.com/ios/TCNDeviceInfo",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,16 +12,21 @@
     "周高举": "zgj@shtruecolor.com"
   },
   "source": {
-    "git": "https://github.com/周高举/TCNDeviceInfo.git",
-    "tag": "0.1.0"
+    "git": "ssh://git@git.1kxun.com:9922/ios/TCNDeviceInfo.git",
+    "tag": "0.0.01"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "7.0"
   },
   "source_files": "TCNDeviceInfo/Classes/**/*",
   "frameworks": [
     "UIKit",
     "CoreTelephony",
     "AdSupport"
-  ]
+  ],
+  "dependencies": {
+    "TCNDataEncoding": [
+      "= 0.0.1"
+    ]
+  }
 }

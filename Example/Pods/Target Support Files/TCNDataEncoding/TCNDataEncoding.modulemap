@@ -1,0 +1,6 @@
+framework module TCNDataEncoding {
+  umbrella header "TCNDataEncoding-umbrella.h"
+
+  export *
+  module * { export * }
+}

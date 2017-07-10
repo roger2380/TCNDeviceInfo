@@ -12,32 +12,9 @@
 #import <CoreTelephony/CTCarrier.h>
 #import "sys/utsname.h"
 #import <AdSupport/AdSupport.h>
-
-////////////////////////测试代码////////////////////////////////////////////////////////////////////
-
-#import <CommonCrypto/CommonDigest.h>
-
-@interface NSString (TCNDeviceInfo)
-
-@end
-
-@implementation NSString (TCNDeviceInfo)
-
-- (NSString *)md5 {
-  const char *cStr = [self UTF8String];
-  unsigned char result[16];
-  CC_MD5(cStr, (CC_LONG)strlen(cStr), result);
-  return [NSString stringWithFormat:
-          @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
-          result[0], result[1], result[2], result[3],
-          result[4], result[5], result[6], result[7],
-          result[8], result[9], result[10], result[11],
-          result[12], result[13], result[14], result[15]];
-}
-
-@end
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#import <netinet/in.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <TCNDataEncoding/TCNNSString+UrlEncode.h>
 
 static NSString * const kTCDeviceInfoUdidKey = @"TCCLICK_UDID";
 static NSString * const kTCDeviceInfoUdidPastboardKey = @"TCCLICK_UDID_PASTBOARD";
@@ -177,6 +154,25 @@ static NSString * const kTCDeviceInfoUdidPastboardKey = @"TCCLICK_UDID_PASTBOARD
     }
   }
   return imsi ? imsi : @"";
+}
+
++ (NSString *)clientNetworkStatus {
+  struct sockaddr_in zeroAddress;
+  bzero(&zeroAddress, sizeof(zeroAddress));
+  zeroAddress.sin_len = sizeof(zeroAddress);
+  zeroAddress.sin_family = AF_INET;
+  zeroAddress.sin_addr.s_addr = htonl(IN_LINKLOCALNETNUM);
+  SCNetworkReachabilityRef ref = SCNetworkReachabilityCreateWithAddress(kCFAllocatorDefault,
+                                                                        (const struct sockaddr*)&zeroAddress);
+  SCNetworkReachabilityFlags flags = 0;
+  SCNetworkReachabilityGetFlags(ref, &flags);
+  CFRelease(ref);
+  
+  if (flags & kSCNetworkReachabilityFlagsTransientConnection) return @"wifi";
+  if (flags & kSCNetworkReachabilityFlagsConnectionRequired) return @"wifi";
+  if (flags & kSCNetworkReachabilityFlagsIsDirect) return @"wifi";
+  if (flags & kSCNetworkReachabilityFlagsIsWWAN) return @"cellnetwork";
+  return @"unknow";
 }
 
 + (NSString *)clientCarrier {

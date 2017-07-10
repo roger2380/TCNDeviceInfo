@@ -73,6 +73,14 @@
  */
 + (NSString *)clientIMSI;
 
+
+/**
+ 获取当前的网络状态 如@"wifi", @"cellnetwork", @"unknow"
+
+ @return 当前的网络状态
+ */
++ (NSString *)clientNetworkStatus;
+
 /**
  获取当前的运营商信息
  
