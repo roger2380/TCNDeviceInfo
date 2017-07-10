@@ -240,3 +240,77 @@ static NSString * const kTCDeviceInfoUdidPastboardKey = @"TCCLICK_UDID_PASTBOARD
 }
 
 @end
+
+@implementation TCNDeviceInfo (UniversalHTTPHeadersParameters)
+
++ (NSDictionary<NSString *, NSString *> *)universalHTTPHeadersParameters {
+  NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
+  
+  [parameters setValue:[self clientSource] forKey:@"Client-Source"];
+  [parameters setValue:[self clientVersion] forKey:@"Client-Version"];
+  [parameters setValue:[self clientUUID] forKey:@"Client-Uid"];
+  [parameters setValue:[self hardwareDeviceName] forKey:@"Client-Device"];
+  [parameters setValue:@"Apple" forKey:@"Client-Brand"];
+  [parameters setValue:[self clientOS] forKey:@"Client-Os"];
+  [parameters setValue:[self clientLocal] forKey:@"Client-Local"];
+  [parameters setValue:[self clientLanguage] forKey:@"Client-Language"];
+  [parameters setValue:[self clientIMSI] forKey:@"Client-Imsi"];
+  [parameters setValue:[self isDeviceJailbroken] ? @"true" : @"false" forKey:@"Client-Jailbroken"];
+  
+  return [parameters copy];
+}
+
+@end
+
+@implementation TCNDeviceInfo (UniversalURLParameters)
+
++ (NSDictionary<NSString *, NSString *> *)universalURLParameters {
+  NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
+  
+  [parameters setValue:[NSString stringWithFormat:@"%.0f", [[NSDate date] timeIntervalSince1970]] forKey:@"_"];
+  [parameters setValue:[self clientUUID] forKey:@"_udid"];
+  [parameters setValue:[self clientSource] forKey:@"_channel"];
+  [parameters setValue:[self hardwareDeviceName] forKey:@"_model"];
+  [parameters setValue:@"Apple" forKey:@"_brand"];
+  [parameters setValue:[self systemVersion] forKey:@"_ov"];
+  [parameters setValue:[self clientVersion] forKey:@"_v"];
+  [parameters setValue:[self bundleIdentifier] forKey:@"_package"];
+  [parameters setValue:[self clientLocal] forKey:@"_locale"];
+  [parameters setValue:[self clientCarrier] forKey:@"_carrier"];
+  [parameters setValue:[self deviceResolution] forKey:@"_resolution"];
+  [parameters setValue:[self identifierForAdvertising] forKey:@"_idfa"];
+  
+  return [parameters copy];
+}
+
+@end
+
+@implementation TCNDeviceInfo (UniversalADTrackParameters)
+
++ (NSDictionary *)universalAdTrackParameters {
+  NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
+  
+  [parameters setObject:[self clientUUID] forKey:@"udid"];
+  [parameters setObject:[self bundleIdentifier] forKey:@"ios_identifier"];
+  [parameters setObject:[self clientSource] forKey:@"channel"];
+  [parameters setObject:[self hardwareDeviceName] forKey:@"model"];
+  [parameters setObject:[self systemVersion] forKey:@"os_version"];
+  [parameters setObject:[self clientVersion] forKey:@"app_version"];
+  [parameters setObject:[self clientCarrier] forKey:@"carrier"];
+  [parameters setObject:[self deviceResolution] forKey:@"resolution"];
+  [parameters setObject:[self clientLocal] forKey:@"locale"];
+  [parameters setObject:[self clientNetworkStatus] forKey:@"network"];
+  [parameters setObject:@([self isDeviceJailbroken]) forKey:@"jailbroken"];
+  [parameters setObject:[self identifierForAdvertising] forKey:@"idfa"];
+  
+  if ([self isLimitAdTracking]) {
+    [parameters setObject:@YES forKey:@"is_limit_ad_tracking"];
+  } else {
+    // MARK:这里之前设置的值是NSNull，现在改为@NO，需要确定服务器可以正确处理
+    [parameters setObject:@NO forKey:@"is_limit_ad_tracking"];
+  }
+  
+  return [parameters copy];
+}
+
+@end

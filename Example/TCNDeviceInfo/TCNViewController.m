@@ -36,6 +36,10 @@
   NSLog(@"当前设备屏幕的DPI是:%@", [TCNDeviceInfo dpi]);
   NSLog(@"前屏幕的宽度是:%@", [TCNDeviceInfo width]);
   NSLog(@"当前屏幕的高度是:%@", [TCNDeviceInfo height]);
+  
+  NSLog(@"http头部的通用参数:%@", [TCNDeviceInfo universalHTTPHeadersParameters]);
+  NSLog(@"url通用参数:%@", [TCNDeviceInfo universalURLParameters]);
+  NSLog(@"广告追踪的通用参数:%@", [TCNDeviceInfo universalAdTrackParameters]);
 }
 
 @end

@@ -152,3 +152,38 @@
 + (NSString *)height;
 
 @end
+
+@interface TCNDeviceInfo (UniversalHTTPHeadersParameters)
+
+/**
+ 放在http请求头部的通用参数，当前方法返回的字典中没有用户的token字段
+ 
+ @return 参数字典
+ */
++ (NSDictionary<NSString *, NSString *> *)universalHTTPHeadersParameters;
+
+@end
+
+@interface TCNDeviceInfo (UniversalURLParameters)
+
+/**
+ 放在请求的url部分的通用参数，当前方法返回的字典中没有用户的token字段
+
+ @return 参数字典
+ */
++ (NSDictionary<NSString *, NSString *> *)universalURLParameters;
+
+@end
+
+@interface TCNDeviceInfo (UniversalADTrackParameters)
+
+/**
+ 用于广告追踪的通用参数，一般放在HTTP请求的body部分
+ 
+ @return 参数字典
+ */
++ (NSDictionary *)universalAdTrackParameters;
+
+@end
+
+
