@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-get info about device,system,app.
+提供和设备、系统、应用相关的信息,例如系统版本,应用版本,应用的包名等信息.
                        DESC
 
   s.homepage         = 'http://git.1kxun.com/ios/TCNDeviceInfo'
