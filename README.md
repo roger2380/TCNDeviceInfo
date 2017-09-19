@@ -5,9 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/TCNDeviceInfo.svg?style=flat)](http://cocoapods.org/pods/TCNDeviceInfo)
 [![Platform](https://img.shields.io/cocoapods/p/TCNDeviceInfo.svg?style=flat)](http://cocoapods.org/pods/TCNDeviceInfo)
 
-## Example
+## 简介
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+提供系统、应用、设备相关的信息。
 
 ## Requirements
 
