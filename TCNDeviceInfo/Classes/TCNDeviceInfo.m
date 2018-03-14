@@ -314,3 +314,25 @@ static NSString * const kTCDeviceInfoUdidPastboardKey = @"TCCLICK_UDID_PASTBOARD
 }
 
 @end
+
+@implementation TCNDeviceInfo (UniversalNewTrackParameters)
+
++ (NSDictionary *)universalNewTrackParameters {
+  NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
+  
+  [parameters setObject:[self clientUUID] forKey:@"udid"];
+  [parameters setObject:[self clientSource] forKey:@"channel"];
+  [parameters setObject:[self hardwareDeviceName] forKey:@"model"];
+  [parameters setObject:[self systemVersion] forKey:@"os_version"];
+  [parameters setObject:[self clientVersion] forKey:@"app_version"];
+  [parameters setObject:[self clientCarrier] forKey:@"carrier"];
+  [parameters setObject:[self deviceResolution] forKey:@"resolution"];
+  [parameters setObject:[self clientLocal] forKey:@"locale"];
+  [parameters setObject:[self clientNetworkStatus] forKey:@"network"];
+  [parameters setObject:[self identifierForAdvertising] forKey:@"idfa"];
+  [parameters setObject:[self bundleIdentifier] forKey:@"package_name"];
+  
+  return [parameters copy];
+}
+
+@end

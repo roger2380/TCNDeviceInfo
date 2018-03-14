@@ -186,4 +186,16 @@
 
 @end
 
+@interface TCNDeviceInfo (UniversalNewTrackParameters)
+
+/**
+ 漫咖新的数据追踪使用的通用参数字典
+ 文档:http://admin.en.dailymanga.mobi/documents/api?page=Track
+ 
+ @return 参数字典
+ */
++ (NSDictionary *)universalNewTrackParameters;
+
+@end
+
 
