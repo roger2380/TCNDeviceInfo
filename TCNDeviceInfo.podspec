@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TCNDeviceInfo'
-  s.version          = '0.0.03'
+  s.version          = '0.0.04'
   s.summary          = 'get info about device,system,app.'
 
 # This description is used to generate tags and improve search results.
