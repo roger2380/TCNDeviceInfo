@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TCNDeviceInfo'
-  s.version          = '0.0.04'
+  s.version          = '0.0.05'
   s.summary          = 'get info about device,system,app.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 提供和设备、系统、应用相关的信息,例如系统版本,应用版本,应用的包名等信息.
                        DESC
 
-  s.homepage         = 'http://git.1kxun.com/ios/TCNDeviceInfo'
+  s.homepage         = 'https://github.com/roger2380/TCNDeviceInfo.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '周高举' => 'zgj@shtruecolor.com' }
-  s.source           = { :git => 'ssh://git@git.1kxun.com/ios/TCNDeviceInfo.git', :tag => s.version.to_s }
+  s.author           = { 'wuxibiao' => 'roger2380@163.com' }
+  s.source           = { :git => 'https://github.com/roger2380/TCNDeviceInfo.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

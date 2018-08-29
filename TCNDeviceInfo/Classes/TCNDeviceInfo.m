@@ -239,6 +239,13 @@ static NSString * const kTCDeviceInfoUdidPastboardKey = @"TCCLICK_UDID_PASTBOARD
   return [NSString stringWithFormat:@"%.0f", CGRectGetHeight(screenBounds)];
 }
 
++ (NSString *)timeZone {
+  NSInteger offset = [NSTimeZone localTimeZone].secondsFromGMT;
+  offset = offset/3600;
+  NSString *tzStr = [NSString stringWithFormat:@"%ld", (long)offset];
+  return tzStr;
+}
+
 @end
 
 @implementation TCNDeviceInfo (UniversalHTTPHeadersParameters)
@@ -279,7 +286,7 @@ static NSString * const kTCDeviceInfoUdidPastboardKey = @"TCCLICK_UDID_PASTBOARD
   [parameters setValue:[self clientCarrier] forKey:@"_carrier"];
   [parameters setValue:[self deviceResolution] forKey:@"_resolution"];
   [parameters setValue:[self identifierForAdvertising] forKey:@"_idfa"];
-  
+  [parameters setValue:[self timeZone] forKey:@"_tz"];
   return [parameters copy];
 }
 
